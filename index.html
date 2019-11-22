@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Practica individual de sockets</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body style="background-color:powderblue;">
+    <h1 style="color:orange">Mi Chat</h1>
+    <div id="messages"></div>
+    
+    <br/>
+    <hr>
+    <hr>
+    <form onsubmit="return addMessage(this)">
+        <input style="background:tomato" type="text" id="username" placeholder="ingrese su nombre">
+        <input style="background:tomato" type="text" id="texto" placeholder="introduce mensaje">
+        <input style="background:violet" type="submit" value="ENVIAR">
+    </form>
+</body>
+
+</html>
